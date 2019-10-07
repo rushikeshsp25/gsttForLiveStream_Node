@@ -1,0 +1,44 @@
+<!--landing page of Heartland Media WebStream with Closed Captions-->
+<html>
+
+<head>
+    <title>Heartland Media</title>
+    <!--bootstrap styles-->
+    <link rel="stylesheet" href="library/css/bootstrap.min.css">
+    <!--custom styles-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+</head>
+
+<body onload="loaded()">
+    <nav class="navborder navbar navbar-expand-md fixed-top navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img class="img-fluid" src="assets/images/logo.png"></a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid row">
+        <div class="videoElement col-12 col-lg-8 ">
+            <video id="videoPlayer" controls preload="metadata" width="100%" controls autoplay>
+            </video>
+        </div>
+        <h4 id="display-area">
+            No Closed Captions yet
+        </h4>
+    </div>
+    <!--required scripts-->
+    <script src="library/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="library/js/popper.min.js"></script>
+    <script src="library/js/bootstrap.min.js"></script>
+    <script src="library/js/hls.js"></script>
+    <script src="library/js/socket.io.js"></script>
+    <!--script for establishing socket connection-->
+    <script src="assets/js/socket_client.js"></script>
+</body>
+
+</html>
